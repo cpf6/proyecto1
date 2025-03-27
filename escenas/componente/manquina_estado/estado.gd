@@ -9,8 +9,11 @@ func _ready():
 func enter():
 	pass
 	
-func uptade(_delta):
+func update(_delta):
 	pass
 
-func exite():
+func physics_update(_delta):
+	pass
+
+func exit():
 	pass

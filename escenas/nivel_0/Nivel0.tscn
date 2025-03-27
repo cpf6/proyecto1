@@ -1,8 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://bcokt73m2bcw"]
+[gd_scene load_steps=3 format=3 uid="uid://bcokt73m2bcw"]
 
 [ext_resource type="PackedScene" uid="uid://ddn4j3flqacjl" path="res://escenas/componente/jugador/jugador.tscn" id="1_8pfdu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8pfdu"]
+size = Vector2(950, 32)
 
 [node name="Nivel0" type="Node2D"]
 
 [node name="Jugador" parent="." instance=ExtResource("1_8pfdu")]
 position = Vector2(439, 174)
+speed = 200
+gravedad = 450.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-6, 367)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(465, 6)
+shape = SubResource("RectangleShape2D_8pfdu")
