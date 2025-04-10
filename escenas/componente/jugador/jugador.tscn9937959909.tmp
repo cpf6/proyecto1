@@ -143,7 +143,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cuf6o")
 }],
-"loop": false,
+"loop": true,
 "name": &"Atacar",
 "speed": 5.0
 }, {
@@ -241,9 +241,10 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3uyw"]
-radius = 27.0
+radius = 28.1603
 
 [node name="Jugador" type="CharacterBody2D" node_paths=PackedStringArray("sprite", "hud")]
+position = Vector2(7, 1)
 script = ExtResource("1_egb7e")
 friccion_salto = 5
 gravedad = 100.0
@@ -282,9 +283,8 @@ metadata/_custom_type_script = "uid://b4wbd7r0whrmq"
 script = ExtResource("10_irlex")
 metadata/_custom_type_script = "uid://b4wbd7r0whrmq"
 
-[node name="Atacar" type="Node" parent="MaquinaEstado" node_paths=PackedStringArray("hitbox")]
+[node name="Atacar" type="Node" parent="MaquinaEstado"]
 script = ExtResource("11_cuf6o")
-hitbox = NodePath("../../AttackHitbox")
 metadata/_custom_type_script = "uid://b4wbd7r0whrmq"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -303,6 +303,6 @@ editor_draw_drag_margin = true
 [node name="AttackHitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox"]
-position = Vector2(13, -18)
+position = Vector2(12, -19)
 shape = SubResource("CircleShape2D_m3uyw")
 debug_color = Color(0.986503, 0, 0.322922, 0.42)
