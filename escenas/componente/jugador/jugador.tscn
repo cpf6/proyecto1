@@ -245,8 +245,6 @@ radius = 27.0
 
 [node name="Jugador" type="CharacterBody2D" node_paths=PackedStringArray("sprite", "hud")]
 script = ExtResource("1_egb7e")
-friccion_salto = 5
-gravedad = 100.0
 sprite = NodePath("AnimatedSprite2D")
 hud = NodePath("CanvasLayer/HUD")
 metadata/_edit_group_ = true
@@ -257,9 +255,9 @@ shape = SubResource("RectangleShape2D_egb7e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_01657")
-animation = &"Atacar"
-frame = 1
-frame_progress = 0.927381
+animation = &"Saltar"
+frame = 6
+frame_progress = 1.0
 
 [node name="MaquinaEstado" type="Node" parent="." node_paths=PackedStringArray("jugador")]
 script = ExtResource("6_i0rcr")

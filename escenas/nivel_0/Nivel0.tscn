@@ -13,7 +13,8 @@ size = Vector2(42, 42)
 
 [node name="Jugador" parent="." instance=ExtResource("1_8pfdu")]
 position = Vector2(404, 193)
-gravedad = 450.0
+friccion_salto = 100.0
+gravedad = 7500.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(572, 551)
@@ -25,11 +26,10 @@ position = Vector2(-61.4972, -43.5745)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
 position = Vector2(61.676, 45.3901)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_8pfdu")
 
 [node name="Enemigo" type="CharacterBody2D" parent="." groups=["Enemigos"]]
-position = Vector2(487, 176)
+position = Vector2(593, 185)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Enemigo"]

@@ -14,6 +14,10 @@ config/name="Proyecto 1"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://assets/texturas/icon.svg"
 
+[global_group]
+
+Enemigos=""
+
 [input]
 
 mover_izquierda={

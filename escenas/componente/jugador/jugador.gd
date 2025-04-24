@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
-@export var velocidad : float = 250
-@export var impulso_salto = 100
-@export var friccion_salto = 10
-@export var gravedad = 250.0
+@export var velocidad : float = 10000.0
+@export var impulso_salto = 1200.0
+@export var friccion_salto = 100.0
+@export var gravedad = 7500.0
 @export var sprite : AnimatedSprite2D
 
 @export var hud : Control
