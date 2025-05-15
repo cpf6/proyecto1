@@ -11,8 +11,6 @@ func _physics_process(delta : float) -> void:
 	velocity = direccion * velocidad * delta
 	if position.distance_to(posicion_Inicial) >= distancia: 
 		direccion = position.direction_to(posicion_Inicial)
-		#if is_on_wall():
-			#direccion*= -1
 	move_and_slide()
 
 

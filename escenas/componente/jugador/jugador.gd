@@ -20,7 +20,7 @@ func _ready():
 	actualizar_hud()
 	
 	await get_tree().process_frame
-	#monedas = Globales.save_manager.datos_guardado.monedas
+	monedas = Globales.save_manager.datos_guardado.monedas
 
 func _physics_process(delta):
 	actualizar_hud()
