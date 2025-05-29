@@ -255,9 +255,7 @@ shape = SubResource("RectangleShape2D_egb7e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_01657")
-animation = &"Saltar"
-frame = 6
-frame_progress = 1.0
+animation = &"Corriendo"
 
 [node name="MaquinaEstado" type="Node" parent="." node_paths=PackedStringArray("jugador")]
 script = ExtResource("6_i0rcr")
@@ -288,12 +286,23 @@ metadata/_custom_type_script = "uid://b4wbd7r0whrmq"
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource("11_m3uyw")]
+anchors_preset = -1
+anchor_top = -0.006
+anchor_right = 1.001
+anchor_bottom = 0.994
+offset_left = 1.0
+offset_top = -0.112
+offset_right = -0.1521
+offset_bottom = -0.112
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 2)
 limit_left = 0
-limit_top = 0
+limit_top = -100000
 limit_bottom = 648
+limit_smoothed = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 editor_draw_drag_margin = true
