@@ -290,12 +290,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, 324)
-limit_left = 0
-limit_top = -1000000
-limit_bottom = 648
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
 editor_draw_drag_margin = true
 
 [node name="AttackHitbox" type="Area2D" parent="."]

@@ -1,19 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://domw7vrj37uh5"]
 
 [ext_resource type="Script" uid="uid://725728ymgdqy" path="res://escenas/componente/coleccionables/moneda.gd" id="1_qxlrk"]
-[ext_resource type="Texture2D" uid="uid://c3ji5j5kgejv7" path="res://assets/texturas/icon.svg" id="2_slpr6"]
+[ext_resource type="Texture2D" uid="uid://ce0wl4cj0jrkq" path="res://assets/texturas/moneda.png" id="2_qxlrk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_18kb5"]
-size = Vector2(29, 28)
+size = Vector2(130, 130)
 
 [node name="Moneda" type="Area2D"]
+scale = Vector2(0.4, 0.4)
 script = ExtResource("1_qxlrk")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(9.53674e-07, 9.53674e-07)
-scale = Vector2(0.226563, 0.216493)
-texture = ExtResource("2_slpr6")
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_qxlrk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.4, 0.4)
 shape = SubResource("RectangleShape2D_18kb5")
