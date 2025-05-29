@@ -7,7 +7,7 @@
 size = Vector2(130, 130)
 
 [node name="Moneda" type="Area2D"]
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.2, 0.2)
 script = ExtResource("1_qxlrk")
 metadata/_edit_group_ = true
 

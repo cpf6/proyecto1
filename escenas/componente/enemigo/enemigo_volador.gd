@@ -21,6 +21,11 @@ func _physics_process(delta : float) -> void:
 	if abs(position.x - posicion_inicial.x) >= distancia_x:
 		dir_x *= -1
 		tiempo = 0.0
+	
+	if dir_x < 0:
+		sprite.flip_h = true
+	elif dir_x > 0:
+		sprite.flip_h = false
 
 func _on_timer_timeout():
 	for cuerpo in hitbox.get_overlapping_bodies():

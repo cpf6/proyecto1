@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://delbg6diukr53"
-path="res://.godot/imported/murcielago.png-d4406cca9c62e96a189297b8a326b66d.ctex"
+uid="uid://dc2svlh7w7a30"
+path="res://.godot/imported/enemigo1.png-d5c404d9a001b9bbb7cefefcd76adcb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/texturas/murcielago.png"
-dest_files=["res://.godot/imported/murcielago.png-d4406cca9c62e96a189297b8a326b66d.ctex"]
+source_file="res://assets/texturas/enemigos/enemigo1.png"
+dest_files=["res://.godot/imported/enemigo1.png-d5c404d9a001b9bbb7cefefcd76adcb9.ctex"]
 
 [params]
 
